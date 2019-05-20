@@ -31,10 +31,12 @@ export default {
       default: 4
     },
     onFieldCompleted: {
-      type: Function
+      type: Function,
+      default: () => {}
     },
     onFill: {
-      type: Function
+      type: Function,
+      default: () => {}
     }
   },
   methods: {
