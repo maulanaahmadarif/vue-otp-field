@@ -8,7 +8,6 @@
 
 <script>
 export default {
-  name: 'VueOTPField',
   data () {
     return {
       isFieldCompleted: false

@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div>
-      <VueOTPField :onFieldCompleted="onFieldCompleted" :onFill="onFill" />
+      <vue-otp-field :onFieldCompleted="onFieldCompleted" :onFill="onFill" />
     </div>
   </div>
 </template>
@@ -10,18 +10,7 @@
 import VueOTPField from '@/components/VueOTPField'
 
 export default {
-  name: 'app',
-  components: {
-    VueOTPField
-  },
-  methods: {
-    onFieldCompleted (value) {
-      console.log('SUBMITTING')
-    },
-    onFill (inputObj) {
-      console.log(inputObj)
-    }
-  }
+  name: 'app'
 }
 </script>
 
