@@ -63,3 +63,41 @@ export default {
 | currentValue     | String  | Current user typed input                              |
 | isFieldsComplete | Boolean | The flag whether user has already fill all the input  |
 | values           | String  | All input values combined                             |
+
+## Example with button
+```vue
+<template>
+  <div class="hello">
+    <div class="container">
+      <VueOTPField :onFill="onFill" />
+      <button v-show="showButton" class="btn">Verify</button>
+    </div>
+  </div>
+</template>
+
+<script>
+import VueOTPField from 'vue-otp-field'
+
+export default {
+  name: 'HelloWorld',
+  data () {
+    return {
+      showButton: false
+    }
+  },
+  components: {
+    VueOTPField
+  },
+  props: {
+    msg: String
+  },
+  methods: {
+    onFill (val) {
+      val.isFieldsComplete ? this.showButton = true : this.showButton = false
+    }
+  }
+}
+</script>
+```
+
+![example with button](https://raw.githubusercontent.com/maulanaahmadarif/vue-otp-field/master/wButton.gif)
