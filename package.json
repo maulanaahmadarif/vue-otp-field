@@ -1,6 +1,6 @@
 {
   "name": "vue-otp-field",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "repository": "https://github.com/maulanaahmadarif/vue-otp-field",
   "bugs": "https://github.com/maulanaahmadarif/vue-otp-field/issues",
   "author": {
@@ -28,9 +28,15 @@
   },
   "main": "dist/vue-otp-field.umd.js",
   "unpkg": "dist/vue-otp-field.umd.min.js",
-  "keywords": ["input", "otp", "otp field"],
+  "keywords": [
+    "input",
+    "otp",
+    "otp field"
+  ],
   "license": "MIT",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "eslintConfig": {
     "root": true,
     "env": {
